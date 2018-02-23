@@ -25,9 +25,8 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-Ry-2E7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79D-f1-6bK">
-                                <rect key="frame" x="154" y="573" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79D-f1-6bK">
+                                <rect key="frame" x="140" y="573" width="95" height="64"/>
                                 <state key="normal" image="camera"/>
                                 <connections>
                                     <action selector="onPhoto:" destination="ghP-Ww-KKQ" eventType="touchUpInside" id="Mw4-33-F41"/>
@@ -36,7 +35,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="79D-f1-6bK" firstAttribute="leading" secondItem="Lxe-6f-KEH" secondAttribute="leading" constant="140" id="2h1-2K-XqG"/>
+                            <constraint firstItem="79D-f1-6bK" firstAttribute="top" relation="lessThanOrEqual" secondItem="vrG-Wc-0bn" secondAttribute="bottom" constant="509" id="EpC-Fp-V5N"/>
+                            <constraint firstAttribute="trailing" secondItem="79D-f1-6bK" secondAttribute="trailing" constant="140" id="F6d-mr-RYw"/>
                             <constraint firstItem="Sua-Ry-2E7" firstAttribute="top" secondItem="vrG-Wc-0bn" secondAttribute="bottom" id="GgW-xE-Zgk"/>
+                            <constraint firstItem="ufw-e1-uLx" firstAttribute="top" secondItem="79D-f1-6bK" secondAttribute="bottom" constant="30" id="M7y-gl-hqK"/>
                             <constraint firstAttribute="trailing" secondItem="Sua-Ry-2E7" secondAttribute="trailing" id="fBu-eY-n8T"/>
                             <constraint firstItem="ufw-e1-uLx" firstAttribute="top" secondItem="Sua-Ry-2E7" secondAttribute="bottom" id="h3E-u6-oWS"/>
                             <constraint firstItem="Sua-Ry-2E7" firstAttribute="leading" secondItem="Lxe-6f-KEH" secondAttribute="leading" id="o2c-el-ydG"/>
